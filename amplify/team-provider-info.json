@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-homeereactamplified-dev-204803-authRole",
+      "UnauthRoleArn": "arn:aws:iam::760393344525:role/amplify-homeereactamplified-dev-204803-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::760393344525:role/amplify-homeereactamplified-dev-204803-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-homeereactamplified-dev-204803-deployment",
+      "UnauthRoleName": "amplify-homeereactamplified-dev-204803-unauthRole",
+      "StackName": "amplify-homeereactamplified-dev-204803",
+      "StackId": "arn:aws:cloudformation:us-west-2:760393344525:stack/amplify-homeereactamplified-dev-204803/77ef5c30-92fd-11ed-8b8e-0a3718342c55",
+      "AmplifyAppId": "d1afdc3uya0zvy"
+    },
+    "categories": {
+      "auth": {
+        "homeereactamplifiedf4030b6d": {}
+      },
+      "api": {
+        "homeebackend": {}
+      }
+    }
+  }
+}
