@@ -9,14 +9,27 @@
       "UnauthRoleName": "amplify-homeereactamplified-dev-204803-unauthRole",
       "StackName": "amplify-homeereactamplified-dev-204803",
       "StackId": "arn:aws:cloudformation:us-west-2:760393344525:stack/amplify-homeereactamplified-dev-204803/77ef5c30-92fd-11ed-8b8e-0a3718342c55",
-      "AmplifyAppId": "d1afdc3uya0zvy"
+      "AmplifyAppId": "d1afdc3uya0zvy",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-homeereactamplified-dev-204803-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
-        "homeereactamplifiedf4030b6d": {}
+        "homeereactamplifiedf4030b6d": {},
+        "userPoolGroups": {}
       },
       "api": {
         "homeebackend": {}
+      },
+      "function": {
+        "homeeSampleTrigger": {
+          "deploymentBucketName": "amplify-homeereactamplified-dev-204803-deployment",
+          "s3Key": "amplify-builds/homeeSampleTrigger-766d4a796e4d656e454e-build.zip"
+        },
+        "homeereactamplifiedf4030b6dPostConfirmation": {
+          "GROUP": "members",
+          "deploymentBucketName": "amplify-homeereactamplified-dev-204803-deployment",
+          "s3Key": "amplify-builds/homeereactamplifiedf4030b6dPostConfirmation-6a6159744a734d4d6f67-build.zip"
+        }
       }
     }
   }
