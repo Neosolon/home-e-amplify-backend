@@ -1,0 +1,65 @@
+type Recipe
+  @model
+  @auth(
+    rules: [
+      { allow: owner, ownerField: "id" }
+      { allow: private, operations: [read] }
+    ]
+  ) {
+  id: ID!
+    @auth(
+      rules: [
+        { allow: owner, operations: [create, read, delete] }
+        { allow: private, operations: [read] }
+      ]
+    )
+  name: String!
+  prepTime: Int
+  steps: [RecipeStep]! @hasMany(indexName: "byRecipe", fields: ["id"])
+  allergenInfo: AllergenInfo
+  ingredients: [RecipeIngredient]!
+    @hasMany(indexName: "byRecipe", fields: ["id"])
+  nutrition: Nutrition
+  lastCalculatedAt: AWSDateTime
+  recipeSource: String
+}
+
+type Ingredient @model {
+  id: ID!
+  name: String!
+  nutrition: Nutrition
+  fdcId: String
+}
+
+type RecipeStep @model {
+  id: ID!
+  instruction: String!
+  stepNumber: Int!
+  recipeId: ID! @index(name: "byRecipe")
+}
+
+type RecipeIngredient @model {
+  id: ID!
+  ingredient: Ingredient!
+  quantity: FoodQuantity!
+  recipeId: ID! @index(name: "byRecipe")
+}
+
+type Nutrition {
+  calories: FoodQuantity
+  protein: FoodQuantity
+  fat: FoodQuantity
+  carbohydrates: FoodQuantity
+  vitaminA: FoodQuantity
+}
+
+type FoodQuantity {
+  unitOfMeasurement: String
+  amount: Float
+}
+
+type AllergenInfo {
+  glutenFree: Boolean
+  dairyFree: Boolean
+  peanutAllergy: Boolean
+}

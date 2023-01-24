@@ -21,10 +21,6 @@
         "homeebackend": {}
       },
       "function": {
-        "homeeSampleTrigger": {
-          "deploymentBucketName": "amplify-homeereactamplified-dev-204803-deployment",
-          "s3Key": "amplify-builds/homeeSampleTrigger-766d4a796e4d656e454e-build.zip"
-        },
         "homeereactamplifiedf4030b6dPostConfirmation": {
           "GROUP": "members",
           "deploymentBucketName": "amplify-homeereactamplified-dev-204803-deployment",

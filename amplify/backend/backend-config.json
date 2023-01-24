@@ -87,21 +87,6 @@
     }
   },
   "function": {
-    "homeeSampleTrigger": {
-      "build": true,
-      "dependsOn": [
-        {
-          "attributes": [
-            "GraphQLAPIIdOutput",
-            "GraphQLAPIEndpointOutput"
-          ],
-          "category": "api",
-          "resourceName": "homeebackend"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
     "homeereactamplifiedf4030b6dPostConfirmation": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -109,22 +94,6 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_homeeSampleTrigger_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "homeeSampleTrigger"
-        }
-      ]
-    },
-    "AMPLIFY_function_homeeSampleTrigger_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "homeeSampleTrigger"
-        }
-      ]
-    },
     "AMPLIFY_function_homeereactamplifiedf4030b6dPostConfirmation_GROUP": {
       "usedBy": [
         {
