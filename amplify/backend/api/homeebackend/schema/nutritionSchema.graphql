@@ -24,21 +24,27 @@ type Recipe
   recipeSource: String
 }
 
-type Ingredient @model {
+type Ingredient
+  @model
+  @auth(rules: [{ allow: owner, operations: [create, read, delete] }]) {
   id: ID!
   name: String!
   nutrition: Nutrition
   fdcId: String
 }
 
-type RecipeStep @model {
+type RecipeStep
+  @model
+  @auth(rules: [{ allow: owner, operations: [create, read, delete] }]) {
   id: ID!
   instruction: String!
   stepNumber: Int!
   recipeId: ID! @index(name: "byRecipe")
 }
 
-type RecipeIngredient @model {
+type RecipeIngredient
+  @model
+  @auth(rules: [{ allow: owner, operations: [create, read, delete] }]) {
   id: ID!
   ingredient: Ingredient!
   quantity: FoodQuantity!
