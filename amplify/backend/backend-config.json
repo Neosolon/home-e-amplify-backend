@@ -1,34 +1,5 @@
 {
-  "api": {
-    "homeebackend": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "UserPoolId"
-          ],
-          "category": "auth",
-          "resourceName": "homeereactamplifiedf4030b6d"
-        }
-      ],
-      "output": {
-        "authConfig": {
-          "additionalAuthenticationProviders": [
-            {
-              "authenticationType": "AWS_IAM"
-            }
-          ],
-          "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authhomeereactamplifiedf4030b6d"
-            }
-          }
-        }
-      },
-      "providerPlugin": "awscloudformation",
-      "service": "AppSync"
-    }
-  },
+  "api": {},
   "auth": {
     "homeereactamplifiedf4030b6d": {
       "customAuth": false,
@@ -95,6 +66,14 @@
   },
   "parameters": {
     "AMPLIFY_function_homeereactamplifiedf4030b6dPostConfirmation_GROUP": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "homeereactamplifiedf4030b6dPostConfirmation"
+        }
+      ]
+    },
+    "AMPLIFY_function_homeereactamplifiedf4030b6dPostConfirmation_adminGroup": {
       "usedBy": [
         {
           "category": "function",

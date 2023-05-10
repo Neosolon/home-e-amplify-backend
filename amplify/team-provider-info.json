@@ -17,14 +17,12 @@
         "homeereactamplifiedf4030b6d": {},
         "userPoolGroups": {}
       },
-      "api": {
-        "homeebackend": {}
-      },
       "function": {
         "homeereactamplifiedf4030b6dPostConfirmation": {
           "GROUP": "members",
           "deploymentBucketName": "amplify-homeereactamplified-dev-204803-deployment",
-          "s3Key": "amplify-builds/homeereactamplifiedf4030b6dPostConfirmation-6a6159744a734d4d6f67-build.zip"
+          "s3Key": "amplify-builds/homeereactamplifiedf4030b6dPostConfirmation-7332332f52734169595a-build.zip",
+          "adminGroup": "huertasdanny@gmail.com, ronald@gmail.com"
         }
       }
     }

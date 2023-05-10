@@ -1,4 +1,0 @@
-type Basic @model @auth(rules: [{allow: private}]) {
-  id: ID!
-}
- 

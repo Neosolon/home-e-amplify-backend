@@ -14,5 +14,11 @@
   "roleName": "homeereactamplifiedf4030b6dPostConfirmation",
   "skipEdit": true,
   "GROUP": "members",
-  "enableCors": false
+  "enableCors": false,
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "adminGroup",
+      "environmentVariableName": "ADMIN_GROUP"
+    }
+  ]
 }

@@ -4,18 +4,18 @@ const cognitoidentityserviceprovider = new aws.CognitoIdentityServiceProvider({
   apiVersion: '2016-04-18',
 });
 
-const ADMIN_GROUP = process.env.ADMIN_GROUP || [];
+const ADMIN_GROUP = process.env.ADMIN_GROUP.split(", ") || [];
 
 /**
  * @type {import('@types/aws-lambda').PostConfirmationTriggerHandler}
  */
 exports.handler = async event => {
   const groupParams = {
-    GroupName: process.env.GROUP,
+    GroupName: process.env.GROUP || "members",
     UserPoolId: event.userPoolId,
   };
   const addUserParams = {
-    GroupName: process.env.GROUP,
+    GroupName: process.env.GROUP || "members",
     UserPoolId: event.userPoolId,
     Username: event.userName,
   };
