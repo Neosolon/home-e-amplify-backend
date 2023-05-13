@@ -3,6 +3,7 @@ src/graphql/
 amplify/team-provider-info.json
 src/graphql/subscriptions.js
 amplify/backend/api/homeebackend/resolvers/*
+
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend
 amplify/.config/local-*

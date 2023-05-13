@@ -1,29 +1,20 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-homeereactamplified-dev-204803-authRole",
-      "UnauthRoleArn": "arn:aws:iam::760393344525:role/amplify-homeereactamplified-dev-204803-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::760393344525:role/amplify-homeereactamplified-dev-204803-authRole",
+      "AuthRoleName": "amplify-homeereactamplified-dev-215531-authRole",
+      "UnauthRoleArn": "arn:aws:iam::760393344525:role/amplify-homeereactamplified-dev-215531-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::760393344525:role/amplify-homeereactamplified-dev-215531-authRole",
       "Region": "us-west-2",
-      "DeploymentBucketName": "amplify-homeereactamplified-dev-204803-deployment",
-      "UnauthRoleName": "amplify-homeereactamplified-dev-204803-unauthRole",
-      "StackName": "amplify-homeereactamplified-dev-204803",
-      "StackId": "arn:aws:cloudformation:us-west-2:760393344525:stack/amplify-homeereactamplified-dev-204803/77ef5c30-92fd-11ed-8b8e-0a3718342c55",
-      "AmplifyAppId": "d1afdc3uya0zvy",
-      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-homeereactamplified-dev-204803-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+      "DeploymentBucketName": "amplify-homeereactamplified-dev-215531-deployment",
+      "UnauthRoleName": "amplify-homeereactamplified-dev-215531-unauthRole",
+      "StackName": "amplify-homeereactamplified-dev-215531",
+      "StackId": "arn:aws:cloudformation:us-west-2:760393344525:stack/amplify-homeereactamplified-dev-215531/b72e1f10-f10f-11ed-897d-02a4914ace59",
+      "AmplifyAppId": "d191jy4hq428fl"
     },
     "categories": {
       "auth": {
-        "homeereactamplifiedf4030b6d": {},
+        "homeENextUserPool": {},
         "userPoolGroups": {}
-      },
-      "function": {
-        "homeereactamplifiedf4030b6dPostConfirmation": {
-          "GROUP": "members",
-          "deploymentBucketName": "amplify-homeereactamplified-dev-204803-deployment",
-          "s3Key": "amplify-builds/homeereactamplifiedf4030b6dPostConfirmation-7332332f52734169595a-build.zip",
-          "adminGroup": "huertasdanny@gmail.com, ronald@gmail.com"
-        }
       }
     }
   }

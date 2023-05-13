@@ -1,19 +1,8 @@
 {
-  "api": {},
   "auth": {
-    "homeereactamplifiedf4030b6d": {
+    "homeENextUserPool": {
       "customAuth": false,
-      "dependsOn": [
-        {
-          "attributes": [
-            "Arn",
-            "Name"
-          ],
-          "category": "function",
-          "resourceName": "homeereactamplifiedf4030b6dPostConfirmation",
-          "triggerProvider": "Cognito"
-        }
-      ],
+      "dependsOn": [],
       "frontendAuthConfig": {
         "mfaConfiguration": "OFF",
         "mfaTypes": [
@@ -24,9 +13,10 @@
           "passwordPolicyMinLength": 8
         },
         "signupAttributes": [
+          "BIRTHDATE",
           "EMAIL",
+          "FAMILY_NAME",
           "NAME",
-          "NICKNAME",
           "PREFERRED_USERNAME"
         ],
         "socialProviders": [],
@@ -50,52 +40,12 @@
             "IdentityPoolId"
           ],
           "category": "auth",
-          "resourceName": "homeereactamplifiedf4030b6d"
+          "resourceName": "homeENextUserPool"
         }
       ],
       "providerPlugin": "awscloudformation",
       "service": "Cognito-UserPool-Groups"
     }
   },
-  "function": {
-    "homeereactamplifiedf4030b6dPostConfirmation": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
-  "parameters": {
-    "AMPLIFY_function_homeereactamplifiedf4030b6dPostConfirmation_GROUP": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "homeereactamplifiedf4030b6dPostConfirmation"
-        }
-      ]
-    },
-    "AMPLIFY_function_homeereactamplifiedf4030b6dPostConfirmation_adminGroup": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "homeereactamplifiedf4030b6dPostConfirmation"
-        }
-      ]
-    },
-    "AMPLIFY_function_homeereactamplifiedf4030b6dPostConfirmation_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "homeereactamplifiedf4030b6dPostConfirmation"
-        }
-      ]
-    },
-    "AMPLIFY_function_homeereactamplifiedf4030b6dPostConfirmation_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "homeereactamplifiedf4030b6dPostConfirmation"
-        }
-      ]
-    }
-  }
+  "function": {}
 }

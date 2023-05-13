@@ -252,6 +252,8 @@ export default function NavBar(props) {
         {...getOverrideProps(overrides, "DashProfileAndSearch")}
       >
         <SearchField
+          width="300px"
+          height="unset"
           shrink="0"
           placeholder="Placeholder"
           size="default"

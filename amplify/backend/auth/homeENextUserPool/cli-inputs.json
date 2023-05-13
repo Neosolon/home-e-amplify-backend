@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "homeereactamplifiedf4030b6d_identitypool_f4030b6d",
+    "identityPoolName": "homeeNext_identity_pool",
     "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "homeerf4030b6d",
-    "userPoolName": "homeereactamplifiedf4030b6d_userpool_f4030b6d",
+    "resourceNameTruncated": "homeera3910653",
+    "userPoolName": "homeeNext_user_pool",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -20,9 +20,10 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
+      "birthdate",
       "email",
+      "family_name",
       "name",
-      "nickname",
       "preferred_username"
     ],
     "aliasAttributes": [],
@@ -34,22 +35,21 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "homeerf4030b6d_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "homeENa3910653_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "f4030b6d",
-    "resourceName": "homeereactamplifiedf4030b6d",
+    "sharedId": "a3910653",
+    "resourceName": "homeENextUserPool",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "manual",
     "usernameAttributes": [
       "email"
     ],
-    "triggers": {
-      "PostConfirmation": [
-        "add-to-group"
-      ]
-    },
+    "userPoolGroups": true,
+    "adminQueries": false,
+    "triggers": {},
+    "hostedUI": false,
     "userPoolGroupList": [
-      "members",
+      "member",
       "admin"
     ],
     "serviceName": "Cognito",
@@ -68,28 +68,12 @@
       ]
     },
     "breakCircularDependency": true,
-    "dependsOn": [
-      {
-        "category": "function",
-        "resourceName": "homeereactamplifiedf4030b6dPostConfirmation",
-        "triggerProvider": "Cognito",
-        "attributes": [
-          "Arn",
-          "Name"
-        ]
-      }
-    ],
-    "userPoolGroups": false,
-    "adminQueries": false,
-    "hostedUI": false,
+    "dependsOn": [],
     "parentStack": {
       "Ref": "AWS::StackId"
     },
-    "permissions": [
-      "{\n  \"policyName\": \"AddToGroupCognito\",\n  \"trigger\": \"PostConfirmation\",\n  \"effect\": \"Allow\",\n  \"actions\": [\n    \"cognito-idp:AdminAddUserToGroup\",\n    \"cognito-idp:GetGroup\",\n    \"cognito-idp:CreateGroup\"\n  ],\n  \"resource\": {\n    \"paramType\": \"!GetAtt\",\n    \"keys\": [\n      \"UserPool\",\n      \"Arn\"\n    ]\n  }\n}"
-    ],
+    "permissions": [],
     "authProviders": [],
-    "thirdPartyAuth": false,
-    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"PostConfirmation\",\n    \"lambdaFunctionName\": \"homeereactamplifiedf4030b6dPostConfirmation\"\n  }\n]"
+    "thirdPartyAuth": false
   }
 }

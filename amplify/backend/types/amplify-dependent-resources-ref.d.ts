@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
   "auth": {
-    "homeereactamplifiedf4030b6d": {
+    "homeENextUserPool": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
       "IdentityPoolId": "string",
@@ -11,16 +11,7 @@ export type AmplifyDependentResourcesAttributes = {
     },
     "userPoolGroups": {
       "adminGroupRole": "string",
-      "membersGroupRole": "string"
-    }
-  },
-  "function": {
-    "homeereactamplifiedf4030b6dPostConfirmation": {
-      "Arn": "string",
-      "LambdaExecutionRole": "string",
-      "LambdaExecutionRoleArn": "string",
-      "Name": "string",
-      "Region": "string"
+      "memberGroupRole": "string"
     }
   }
 }
